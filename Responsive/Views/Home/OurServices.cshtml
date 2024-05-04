@@ -1,0 +1,312 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Search Button</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        .search-form {
+            margin-right: 15px;
+        }
+
+        #a1 {
+            margin: 30px;
+            padding: 60px;
+        }
+
+        #footer {
+            background-color: black;
+            padding: 80px;
+            list-style: none;
+        }
+
+            #footer h3 {
+                color: white;
+            }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+            }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: right;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li a {
+                    text-decoration: none;
+                    color: cadetblue; 
+                }
+
+        #navbar {
+            background-color: #4842CA;
+            color: red;
+        }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+                padding: 20px;
+            }
+
+
+
+        #navv {
+            font-size: 16px;
+            background-color: white;
+            width: fit-content;
+        }
+
+            #navv a {
+                margin: 10px;
+            }
+        #searchForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchInput {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
+        <a class="navbar-brand" href="#" style="color:white; font-size:3rem; font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS',sans-serif; margin:10px;">KINICH IT LABS</a>
+
+
+        <form id="searchForm" class="form-inline">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        &nbsp;
+        &nbsp;
+        <div id="searchResults"></div>
+
+    </nav>
+
+    <div class="container" id="navv">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Home/Index">Home</a>
+                <a href="~/Home/About">About</a>
+                <a href="~/Home/Details">Details</a>
+                <a href="~/Home/Clients">Clients</a>
+                <a href="~/Home/OurServices">Services</a>
+
+                <a href="~/Home/ContactUs">Contact</a>
+                <a href="~/Home/Help">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <h2><b style="color:red;">Application Development :</b> <i style="font-size:1.2rem;">Creating custom software applications tailored to specific business needs or requirements.</li></h2>
+            <br />
+            <img src="~/Images/s2.jpg" height="600px" width="1200px" />
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <h2><b style="color:red;">Application Integration: :</b> <i style="font-size:1.2rem;">Integrating software applications with existing systems or third-party services to ensure seamless data flow and interoperability.</li></h2>
+            <br />
+            <img src="~/Images/s3.png" height="600px" width="1200px" />
+
+
+        </div>
+
+
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <br />
+            <h2><b style="color:red;">Application Testing: </b><i style="font-size:1.2rem;">Conducting testing and quality assurance activities to identify and address any issues or bugs within software applications before deployment.</li></h2>
+            <br />
+            <img src="~/Images/s4.jpg" height="600px" width="1200px" />
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <br />
+            <h2><b style="color:red;">Cloud Application Services: </b><i style="font-size:1.2rem;">Offering cloud-based solutions for hosting, deploying, and managing software applications, often leveraging platforms such as Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP).</li></h2>
+            <br />
+            <img src="~/Images/cledd.png" height="600px" width="1200px" />
+
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <h2><b style="color:red;">Security Services: </b><i style="font-size:1.2rem;"> security measures and protocols to protect software applications from threats such as cyber attacks, data breaches, and unauthorized access.</li></h2>
+            <br />
+            <img src="~/Images/s6.jpeg" height="700px" width="1263px" />
+
+
+        </div>
+    </div>
+
+
+
+
+    <footer id="footer">
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-4">
+                <h3>ABOUT US</h3>
+                <li> <a href="">Our Success Story</a> </li>
+                <br />
+                <li> <a href="">Policy</a>  </li>
+                <br />
+                <li> <a href="">Terms Of Use</a></li>
+                <br />
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>CONTACT US</h3>
+                <li> <a href="~/Home/ContactUs">Contact Us</a> </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Error</a>  </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Issues</a></li>
+                <br />
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Clients</h3>
+                <li> <a href="~/Home/Clients">United Kingdom</a> </li>
+                <br />
+                <li> <a href="~/Home/Clients">United States</a>  </li>
+                <br />
+                <li> <a href="~/Home/Clients">Canada</a></li>
+                <br />
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Dial Us</h3>
+                <li> <a href="">+91 9848022338</a> </li>
+                <br />
+                <li> <a href="">+91 9848022339</a>  </li>
+                <br />
+                <li> <a href="">+91 9848022337</a></li>
+                <br />
+            </div>
+        </div>
+
+
+        <ul class="social-icons">
+
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook text-primary"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter text-info"></i></a></li>
+            <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope text-warning"></i></a></li>
+
+        </ul>
+        <p style="color:white;"> &copy; @DateTime.Now.Year - Developed By Mahesh&reg;</p>
+
+    </footer>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function () {
+          const searchInput = document.getElementById('searchInput');
+          const searchButton = document.getElementById('searchButton');
+          const searchResults = document.getElementById('searchResults');
+
+          function performSearch(event) {
+              event.preventDefault();
+
+              const searchTerm = searchInput.value.trim();
+
+              if (searchTerm !== '') {
+                  searchResults.innerHTML = '';
+
+                  const result = `You searched for: ${searchTerm}`;
+
+                  searchResults.textContent = result;
+              } else {
+                  alert('Please enter a search term');
+              }
+          }
+
+          searchButton.addEventListener('click', performSearch);
+      });
+    </script>
+
+</body>
+</html>

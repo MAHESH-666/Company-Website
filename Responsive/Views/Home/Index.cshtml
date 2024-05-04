@@ -1,0 +1,445 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinich IT Labs</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        
+        .search-form {
+            margin-right: 15px;
+        }
+        #a1{
+            margin:30px;
+            padding:60px;
+        }
+        #footer {
+            background-color: black;
+            padding: 60px;
+            list-style: none;
+            justify-content:center;
+            text-align:center;
+        }
+        #footer h3{
+            color:white;
+        }
+        #navv{
+            font-size:20px;
+            font-weight:bold;
+
+             margin:auto;
+
+
+
+        }
+        #navv a{
+            margin:30px;
+
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size:30px;
+            text-align:right;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li a {
+                    text-decoration: none;
+                    color:cadetblue;
+                }
+
+        #navbar {
+            background-color: #4842CA;
+            color:red;
+        }
+
+
+       #navv {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#navv a {
+    margin: 30px;
+    padding:20px;
+}
+
+
+
+    #navv {
+        font-size: 16px;
+        background-color:white;
+        width:fit-content;
+    }
+
+    #navv a {
+        margin: 10px; 
+    }
+
+        #searchForm {
+            display: flex;
+            align-items:center;
+           
+        }
+
+        #searchInput {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            color:white;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
+        <a class="navbar-brand" href="#" style="color:white; font-size:3rem; font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS',sans-serif; margin:10px;">KINICH IT LABS</a>
+
+        <form id="searchForm" class="form-inline">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        &nbsp;
+        &nbsp;
+        <div id="searchResults"></div>
+        
+    </nav>
+
+
+
+
+    <div class="container" id="navv">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Home/Index">Home</a>
+                <a href="~/Home/About">About</a>
+                <a href="~/Home/Details">Details</a>
+                <a href="~/Home/Clients">Clients</a>
+                <a href="~/Home/OurServices">Services</a>
+                <a href="~/Home/ContactUs">Contact</a>
+                <a href="~/Home/Help">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-xl-2 col-md-4">
+            <ul style="list-style:none; font-size:2rem; color:blue; font-weight:500;padding:20px; margin:30px">
+                <li> <a href="~/Home/Index">Home</a> </li>
+                <br />
+                <li> <a href="~/Home/About">About</a>  </li>
+                <br />
+                <li> <a href="/Home/Details">Details</a></li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Contact</a></li>
+                <br />
+                <li> <a href="~/Home/Clients">Clients</a>   </li>
+                <br />
+                <li> <a href="~/Home/Help">Help</a>   </li>
+                <br />
+
+
+            </ul>
+
+
+        </div>
+
+        <br />
+
+
+
+        <div class="col-xl-8 col-md-4 bg-light text-dark" id="a1">
+            <h2 style="color: #fb4c01">Welcome To Kinich IT Labs</h2>
+            <p>we work as a tech partner for our clients and add value to our customers by optimizing resources and cost of project. We thrive to innovate and achieve the higher standards in our deliverables. For us continuous learning is the oxygen of our business which makes us to be a good partner to work with you.</p>
+            <br />
+            <hr />
+
+            <br />
+            <h2 style="color: #fb4c01">Agile Methodoligies</h2>
+            <p>
+                <h4 style="color:blue;">Agility = Stability + Energy</h4>
+                Kinich IT Labs has created a strong framework which has been utilized on several projects and experienced astonishing results. This framework helps you to achieve your goals by a strategy built across People, Processes, Technology, Structure and keeps customer in center.
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-8">
+                <h2 style="color: #fb4c01">Technology</h2>
+                <p>
+                    Evolution of technology has helped a lot to live a better life, at the same time it has a negative side as cyber-attacks and which are happening at rapid rate. We are here to protect not only your application even your business.
+                    Risk Management: Identifying, assessing, and prioritizing risks to information assets and implementing measures to mitigate those risks.
+
+                    Security Measures: Implementing security controls such as firewalls, encryption, access controls, antivirus software, and intrusion detection systems to protect against various threats.
+
+                    Network Security Securing networks and internet-connected devices to prevent unauthorized access, data breaches, and other cyber attacks.
+                </p>
+            </div>
+
+            <div class="col-md-2">
+
+                <img src="~/Images/CYBER_SECURITY__RTDS_Technologies_Inc..jpg" width="200px" height="200px" />
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+                <img src="~/Images/image-23.png" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:#fb4c01">Development</h2>
+                <p>
+                    Software Development is defined as the process of designing, creating, testing, and maintaining computer programs and applications. Software development plays an important role in our daily lives. It empowers smartphone apps and supports businesses worldwide.
+
+                    According to the U.S. Bure­au of Labor Statistics, there is a projecte­d 21% increase in software de­veloper employment from 2018 to 2028, which is significantly higher than the national average­.
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-8">
+                <h2 style="color:#fb4c01">Testing</h2>
+                <p>
+                    Software testing is a process of verifying and validating whether a software or application is bug-free, meets the technical requirements as guided by its design and development, and meets the user requirements effectively and efficiently by handling all the exceptional and boundary cases1. It involves evaluating and examining computer software or applications to ensure they function correctly and meet the desired requirements2. The process aims to identify any errors, gaps, or missing requirements that may negatively affect the software’s performance, usability, functionality, or security2.
+                </p>
+            </div>
+
+            <div class="col-md-2">
+
+                <img src="~/Images/Automation-lifecycle-testing.jpg" width="200px" height="200px" />
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/nist.png" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:#fb4c01">Cyber Security</h2>
+                <p>
+                    Cybersecurity aims to protect individuals’ and organizations’ systems, applications, computing devices, sensitive data and financial assets against computer viruses, sophisticated and costly ransomware attacks, and more.
+
+                    Cyberattacks have the power to disrupt, damage or destroy businesses, and the cost to victims keeps rising. For example, according to IBM's Cost of a Data Breach 2023 report,
+
+                    The average cost of a data breach in 2023 was USD 4.45 million, up 15% over the last three years;
+
+                    The average cost of a ransomware-related data breach in 2023 was even higher, at USD 5.13 million. This number does not include the cost of the ransom payment, which averaged an extra USD 1,542,333, up 89% from the previous year.
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+
+    <footer id="footer">
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-4">
+                <h3>ABOUT US</h3>
+                <br />
+                <li> <a href="">Our Success Story</a> </li>
+                <br />
+                <li> <a href="">Terms Of Use</a>  </li>
+                <br />
+                <li> <a href="">Policy</a></li>
+                <br />
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>CONTACT US</h3>
+                <br />
+                <li> <a href="~/Home/ContactUs">Contact Us</a> </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Issues</a>  </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Error</a></li>
+                <br />
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Clients</h3>
+                <br />
+                <li> <a href="~/Home/Clients">United Kingdom</a> </li>
+                <br />
+                <li> <a href="~/Home/Clients">United States</a>  </li>
+                <br />
+                <li> <a href="~/Home/Clients">Canada</a></li>
+                <br />
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Dial Us</h3>
+                <br />
+                <li> <a href="">+91 9848022338</a> </li>
+                <br />
+                <li> <a href="">+91 9848022339</a>  </li>
+                <br />
+                <li> <a href="">+91 9848022337</a></li>
+                <br />
+            </div>
+
+
+        </div>
+
+
+        <ul class="social-icons">
+
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook text-primary"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter text-info"></i></a></li>
+            <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope text-warning"></i></a></li>
+
+        </ul>
+        <p style="color:white;"> &copy; @DateTime.Now.Year - Developed By Mahesh&reg;</p>
+
+    </footer>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+
+            function performSearch(event) {
+                event.preventDefault();
+
+                const searchTerm = searchInput.value.trim();
+
+                if (searchTerm !== '') {
+                    searchResults.innerHTML = '';
+
+                    const result = `You searched for: ${searchTerm}`;
+
+                    searchResults.textContent = result;
+                } else {
+                    alert('Please enter a search term');
+                }
+            }
+
+            searchButton.addEventListener('click', performSearch);
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

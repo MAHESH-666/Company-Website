@@ -1,0 +1,348 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Search Button</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <style>
+        .search-form {
+            margin-right: 15px;
+        }
+
+        #a1 {
+            margin: 30px;
+            padding: 60px;
+        }
+
+        #footer {
+            background-color: black;
+            padding: 80px;
+            list-style: none;
+        }
+
+            #footer h3 {
+                color: white;
+            }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+            }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: right;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li a {
+                    text-decoration: none;
+                    color: cadetblue; 
+                }
+
+        #navbar {
+            background-color: #4842CA;
+            color: red;
+        }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+                padding: 20px;
+            }
+
+
+
+        #navv {
+            font-size: 16px;
+            background-color: white;
+            width: fit-content;
+        }
+
+            #navv a {
+                margin: 10px;
+            }
+
+        #contact {
+            justify-content: center;
+        }
+        #searchForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchInput {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
+        <a class="navbar-brand" href="#" style="color:white; font-size:3rem; font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS',sans-serif; margin:10px;">KINICH IT LABS</a>
+
+
+        <form id="searchForm" class="form-inline">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        &nbsp;
+        &nbsp;
+        <div id="searchResults"></div>
+
+    </nav>
+
+    <div class="container" id="navv">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Home/Index">Home</a>
+                <a href="~/Home/About">About</a>
+                <a href="~/Home/Details">Details</a>
+                <a href="~/Home/Clients">Clients</a>
+                <a href="~/Home/OurServices">Services</a>
+
+                <a href="~/Home/ContactUs">Contact</a>
+                <a href="~/Home/Help">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-1">
+
+
+        </div>
+
+        <div class="col-md-5">
+
+            <h2 class="mt-5 text-primary">Registration Form</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select class="form-control" id="gender" required>
+                        <option value="">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" class="form-control" id="country" placeholder="Enter your country" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" class="form-control" id="pincode" placeholder="Enter your pincode" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+            </form>
+        </div>
+
+        <br />
+        <br />
+        <script>
+            $(function () {
+                $("#btnSubmit").click(function () {
+
+                    $.ajax({
+                        type: "POST",
+                        url: `Add_data`,
+                        data: {
+                            name: $('#name').val(),
+                            email: $('#email').val(),
+                            password: $('#password').val(),
+                            age: $('#age').val(),
+                            gender: $('#gender').val(),
+                            city: $('#city').val(),
+                            country: $('#country').val(),
+                            pincode: $('#pincode').val()
+                        },
+                        success: function (response) {
+                            alert(response);
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-5">
+            <br />
+            <br />
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5540.627076617107!2d78.3750258053164!3d17.446195561478103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9368b7f716d1%3A0x68e832b30859da79!2sKinich%20IT%20Labs!5e0!3m2!1sen!2sin!4v1713261340491!5m2!1sen!2sin" width="600" height="800" style="border:3px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+        <div class="col-md-1">
+
+
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <footer id="footer">
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-4">
+                <h3>ABOUT US</h3>
+                <br />
+                <li> <a href="">Our Success Story</a> </li>
+                <br />
+                <li> <a href="">Policy</a>  </li>
+                <br />
+                <li> <a href="">Terms Of Use</a></li>
+                <br />
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>CONTACT US</h3>
+                <br />
+                <li> <a href="~/Home/ContactUs">Contact Us</a> </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Error</a>  </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Issues</a></li>
+                <br />
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Clients</h3>
+                <br />
+                <li> <a href="~/Home/Clients">United Kingdom</a> </li>
+                <br />
+                <li> <a href="~/Home/Clients">United States</a>  </li>
+                <br />
+                <li> <a href="~/Home/Clients">Canada</a></li>
+                <br />
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Dial Us</h3>
+                <br />
+                <li> <a href="">+91 9848022338</a> </li>
+                <br />
+                <li> <a href="">+91 9848022339</a>  </li>
+                <br />
+                <li> <a href="">+91 9848022337</a></li>
+                <br />
+            </div>
+        </div>
+
+        <ul class="social-icons">
+
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook text-primary"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter text-info"></i></a></li>
+            <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope text-warning"></i></a></li>
+
+        </ul>
+        <p style="color:white;"> &copy; @DateTime.Now.Year - Developed By Mahesh&reg;</p>
+    </footer>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+
+            function performSearch(event) {
+                event.preventDefault();
+
+                const searchTerm = searchInput.value.trim();
+
+                if (searchTerm !== '') {
+                    searchResults.innerHTML = '';
+
+                    const result = `You searched for: ${searchTerm}`;
+
+                    searchResults.textContent = result;
+                } else {
+                    alert('Please enter a search term');
+                }
+            }
+
+            searchButton.addEventListener('click', performSearch);
+        });
+    </script>
+    <script src="~/JavaScript.js"></script>
+
+</body>
+</html>

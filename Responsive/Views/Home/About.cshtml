@@ -1,0 +1,378 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Search Button</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+   
+        .search-form {
+            margin-right: 15px;
+        }
+
+        #a1 {
+            margin: 30px;
+            padding: 60px;
+        }
+
+        #footer {
+            background-color: black;
+            padding: 80px;
+            list-style: none;
+        }
+
+            #footer h3 {
+                color: white;
+            }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+            }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: right;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li a {
+                    text-decoration: none;
+                    color: cadetblue;
+                }
+
+        #navbar {
+            background-color: #4842CA;
+            color: red;
+        }
+        #a1 h3{
+            color:red;
+            
+        }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+                padding: 20px;
+            }
+
+
+
+        #navv {
+            font-size: 16px;
+            background-color: white;
+            width: fit-content;
+        }
+
+            #navv a {
+                margin: 10px;
+            }
+        #searchForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchInput {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
+        <a class="navbar-brand" href="#" style="color:white; font-size:3rem; font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS',sans-serif; margin:10px;">KINICH IT LABS</a>
+
+
+        <form id="searchForm" class="form-inline">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        &nbsp;
+        &nbsp;
+        <div id="searchResults"></div>
+
+    </nav>
+
+    <div class="container" id="navv">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Home/Index">Home</a>
+                <a href="~/Home/About">About</a>
+                <a href="~/Home/Details">Details</a>
+                <a href="~/Home/Clients">Clients</a>
+                <a href="~/Home/OurServices">Services</a>
+                <a href="~/Home/ContactUs">Contact</a>
+                <a href="~/Home/Help">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="col-xl-2 col-md-4">
+            <ul style="list-style:none; font-size:2rem; color:blue; font-weight:500;padding:20px; margin:30px">
+                <li> <a href="~/Home/Index">Home</a> </li>
+                <br />
+                <li> <a href="~/Home/About">About</a>  </li>
+                <br />
+                <li> <a href="/Home/Details">Details</a></li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Contact</a></li>
+                <br />
+                <li> <a href="~/Home/Clients">Clients</a>   </li>
+                <br />
+                <li> <a href="~/Home/Help">Help</a>   </li>
+                <br />
+
+
+            </ul>
+
+        </div>
+
+        <br />
+
+        <div class="col-xl-8 col-md-4 bg-light text-dark" id="a1">
+            <h2 style="color:brown; text-align:center; font-size:3rem;">Kinich IT Labs</h2>
+            <br />
+            <p style="font-family:'Times New Roman', Times, serif; font-size:2rem; color:darkolivegreen">
+                Started by a group of people who are passionate about the technology and determined to add value to large groups across the global.
+                <br /> <br />We believe that technology can bring a positive change in the society and we would like to be part of that initiative.
+
+                <br /><br />At Kinich, client experience is the utmost importance and the roots for this are handled through resource experience.
+                <br />If we take care of our resources well, we are confident that our clients are taken care off.
+
+                <br /> <br />The word Kinich has been derived from Kinich Ahau which means Sun.
+
+                <br /> <br />Kinich IT Labs is a new age innovative software services company, providing end-to-end design, development, testing and support activities.
+                <br />We are working with the clients across the globe in multiple industries.
+
+                <br /> Kinich is powered by highly skilled resources who have passion, patience and vision structured through certain goals to achieve. <br />
+                Our engagement models are aligned to meet your stage-specific needs across the entire product life cycle.
+            </p>
+
+            <hr />
+
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 2rem; color: darkolivegreen">
+                <h3>Types of Business Growth</h3>
+                <br />
+                <br />
+
+
+                As a business owner, you have several avenues for growth. Business growth can be broken down into the following categories:
+                <br />
+                <h3>
+                    <br />
+                    1. Organic
+                </h3>
+                <br />
+                With organic growth, a company expands through its own operations utilzing its own internal resources. This is in contrast to having to seek out external resources to facilitate growth.
+
+                An example of organic growth is making production more efficient so you can produce more within a shorter time frame, which leads to increased sales. A perk of utilizing organic growth is that it relies on self-sufficiency and avoids taking on debt. Additionally, the increased revenue created from organic growth can help fund more strategic growth methods later on. We’ll explain that below.
+                <br />
+                <h3>
+                    <br />
+                    2. Strategic
+                </h3>
+                <br /><br />
+                Strategic growth involves developing initiatives that will help your business grow long term. An example of strategic growth could be coming up with a new product or developing a market strategy to target a new audience.
+
+                Unlike organic growth, these initiatives often require a significant amount of resources and funding. Businesses often take an organic approach first in hopes that their efforts will generate enough capital to invest in future strategic growth initiatives.
+                <br />
+                <h3>
+                    <br />
+                    3. Internal
+                </h3><br />
+                Internal growth strategy seeks to optimize internal business processes to increase revenue. Similar to organic growth, this strategy relies on companies using their own internal resources. Internal growth strategy is all about using existing resources in the most purposeful way possible.
+
+                An example of internal growth could be cutting wasteful spending and running a leaner operation by automating some of its functions instead of hiring more employees. Internal growth can be more challenging because it forces companies to look at how their processes can be improved and made more efficient rather than focusing on external factors like entering new markets to facilitate growth.
+                <br />
+                <h3>
+                    <br />
+                    4. Mergers, Partnerships, Acquisitions
+                </h3><br />
+                Although riskier than the other growth types, mergers, partnerships, and acquisitions can come with high rewards. There’s strength in numbers and a well-executed merger, partnership, or acquisition can help your business break into a new market, expand your customer base, or increase your products and services on offer.
+
+                Business Growth Strategy
+            </p><br />
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <img src="~/Images/c1.jpg" height="600px" ; width="1200px" />
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-12">
+
+                <img src="~/Images/c2.jpg" height="600px" ; width="1200px" />
+
+            </div>
+
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+
+    <br />
+    <br />
+
+
+    <footer id="footer">
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-4">
+                <h3>ABOUT US</h3>
+                <li> <a href="">Our Success Story</a> </li>
+                <br />
+                <li> <a href="">Policy</a>  </li>
+                <br />
+                <li> <a href="">Terms Of Use</a></li>
+                <br />
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>CONTACT US</h3>
+                <li> <a href="~/Home/ContactUs">Contact Us</a> </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Error</a>  </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Issues</a></li>
+                <br />
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Clients</h3>
+                <li> <a href="~/Home/Clients">United Kingdom</a> </li>
+                <br />
+                <li> <a href="~/Home/Clients">United States</a>  </li>
+                <br />
+                <li> <a href="~/Home/Clients">Canada</a></li>
+                <br />
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Dial Us</h3>
+                <li> <a href="">+91 9848022338</a> </li>
+                <br />
+                <li> <a href="">+91 9848022339</a>  </li>
+                <br />
+                <li> <a href="">+91 9848022337</a></li>
+                <br />
+            </div>
+        </div>
+
+        <ul class="social-icons">
+
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook text-primary"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter text-info"></i></a></li>
+            <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope text-warning"></i></a></li>
+
+        </ul>
+        <p style="color:white;"> &copy; @DateTime.Now.Year - Developed By Mahesh&reg;</p>
+
+    </footer>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults');
+
+            function performSearch(event) {
+                event.preventDefault();
+
+                const searchTerm = searchInput.value.trim();
+
+                if (searchTerm !== '') {
+                    searchResults.innerHTML = '';
+
+                    const result = `You searched for: ${searchTerm}`;
+
+                    searchResults.textContent = result;
+                } else {
+                    alert('Please enter a search term');
+                }
+            }
+
+            searchButton.addEventListener('click', performSearch);
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,668 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar with Search Button</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS for search icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Adjust padding/margins as needed */
+        .search-form {
+            margin-right: 15px;
+        }
+
+        #a1 {
+            margin: 30px;
+            padding: 60px;
+        }
+
+        #footer {
+            background-color: black;
+            padding: 80px;
+            list-style:none;
+        }
+
+            #footer h3 {
+                color: white;
+            }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+            }
+
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: right;
+        }
+
+            .social-icons li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+                .social-icons li a {
+                    text-decoration: none;
+                    color: cadetblue;
+                }
+
+        #navbar {
+            background-color: #4842CA;
+            color: red;
+        }
+        #con img{
+            border-radius:70%;
+            
+        }
+        #a1 b{
+            color:orangered;
+        }
+        #a1{
+            font-family:Arial;
+        }
+
+        #navv {
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+        }
+
+            #navv a {
+                margin: 30px;
+                padding: 20px;
+            }
+
+
+
+        #navv {
+            font-size: 16px;
+            background-color: white;
+            width: fit-content;
+        }
+
+            #navv a {
+                margin: 10px;
+            }
+        #searchForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #searchInput {
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
+        <a class="navbar-brand" href="#" style="color:white; font-size:3rem; font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS',sans-serif; margin:10px;">KINICH IT LABS</a>
+
+        <form id="searchForm" class="form-inline">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        &nbsp;
+        &nbsp;
+        <div id="searchResults"></div>
+
+    </nav>
+
+    <div class="container" id="navv">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="~/Home/Index">Home</a>
+                <a href="~/Home/About">About</a>
+                <a href="~/Home/Details">Details</a>
+                <a href="~/Home/Clients">Clients</a>
+                <a href="~/Home/OurServices">Services</a>
+                <a href="~/Home/ContactUs">Contact</a>
+                <a href="~/Home/Help">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-xl-2 col-md-4">
+            <ul style="list-style:none; font-size:2rem; color:blue; font-weight:500;padding:20px; margin:30px">
+                <li> <a href="~/Home/Index">Home</a> </li>
+                <br />
+                <li> <a href="~/Home/About">About</a>  </li>
+                <br />
+                <li> <a href="/Home/Details">Details</a></li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Contact</a></li>
+                <br />
+                <li> <a href="~/Home/Clients">Clients</a>   </li>
+                <br />
+                <li> <a href="~/Home/Help">Help</a>   </li>
+                <br />
+
+
+            </ul>
+
+
+        </div>
+
+        <br />
+
+        <div class="col-xl-8 col-md-4 bg-light text-dark" id="a1">
+
+            <b>
+                Identify Your Target Market:
+            </b> Define the industries, businesses, or individuals that would benefit most from your software. Understand their pain points and how your solution addresses them.
+            <br />  <br />
+            <b> Build a Compelling Value Proposition:</b> Clearly articulate the unique value proposition of your software. Highlight how it solves specific problems, improves efficiency, saves costs, or enhances productivity for your target clients.
+            <br />  <br />
+            <b> Create a Strong Online Presence:</b> Develop a professional website that showcases your software’s features, benefits, and case studies. Utilize search engine optimization (SEO) techniques to improve your visibility in search engine results.
+            <br />  <br />
+            <b>Content Marketing: </b>Produce high-quality content such as blog posts, whitepapers, case studies, and tutorials that demonstrate your expertise in the industry and provide value to potential clients. Share this content through your website, social media channels, and industry forums.
+            <br />  <br />
+            <b>Utilize Social Media:</b> Engage with your target audience on social media platforms where they are active. Share updates about your software, participate in relevant discussions, and connect with potential clients and influencers in your industry.
+            <br />  <br />
+            <b>Offer Free Trials or Demos: </b>Provide potential clients with the opportunity to try your software before making a purchase. Offer free trials or demos that allow them to experience its functionality firsthand and understand its value.
+            <br />  <br />
+            <b>Referral Programs: </b>Encourage your existing clients to refer your software to others by offering incentives such as discounts, credits, or rewards for successful referrals. Word-of-mouth referrals can be a powerful way to attract new clients.
+            <br />  <br />
+            <b>Attend Industry Events and Conferences:</b> Participate in trade shows, conferences, and networking events relevant to your target market. These events provide opportunities to showcase your software, connect with potential clients, and build relationships with industry professionals.
+            <br />  <br />
+            <b>Partner with Complementary Businesses:</b> Identify businesses that offer complementary products or services to yours and explore partnership opportunities. Collaborating with these businesses can help you reach a wider audience and generate referrals.
+            <br />  <br />
+            <b> Provide Excellent Customer Support:</b>Deliver exceptional customer support to your clients to build trust and loyalty. Address their questions, concerns, and issues promptly and effectively to ensure a positive experience with your software.
+            <br />  <br />
+        </div>
+
+    </div>
+
+
+
+    <div class="container" id="con">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+                <h2 style="color:brown">INDIA</h2>
+                <p>
+                    <img src="~/Images/u4.png" height="250px" width="400px" />
+                </p>
+            </div>
+            &nbsp;
+            &nbsp;
+            <div class="col-md-5">
+                <h2 style="color:brown">United Kingdom</h2>
+                <p> <img src="~/Images/u1.png" height="250px" width="400px" /> </p>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+    <div class="container" id="con">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+                <h2 style="color:brown">UNITED STATES</h2>
+                <p>
+                    <img src="~/Images/u2.jpg" height="250px" width="400px" />
+                </p>
+            </div>
+            &nbsp;
+            &nbsp;
+            <div class="col-md-5">
+                <h2 style="color:brown">CANADA</h2>
+                <p> <img src="~/Images/u3.jpg" height="250px" width="400px" /> </p>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="con">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-5">
+                <h2 style="color:brown">RUSSIA</h2>
+                <p>
+                    <img src="~/Images/u6.jpg" height="250px" width="400px" />
+                </p>
+            </div>
+            &nbsp;
+            &nbsp;
+            <div class="col-md-5">
+                <h2 style="color:brown">JAPAN</h2>
+                <p> <img src="~/Images/japan.jpg" height="250px" width="400px" /> </p>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <br />
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/u4.png" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">Indian Clients</h2>
+                <p>
+
+                    <br /> <b>Business Clients:</b> Business clients in India may include small, medium, or large enterprises across various industries such as finance, healthcare, retail, manufacturing, etc. They might engage with the software company for software development, enterprise solutions, IT consulting, or outsourcing services.
+
+                    <br />   <b> Government Clients:</b> Government agencies, departments, or public sector organizations in India may also be considered clients for a software company. These clients may have specific requirements for software systems, applications, or IT infrastructure.
+
+                    <br />  <b>Educational Institutions:</b> Schools, colleges, universities, and other educational institutions in India may require software solutions for administration, e-learning platforms, student management systems, etc.
+
+                    <br />  <b>Startups and Entrepreneurs:</b> India has a vibrant startup ecosystem, and startups or entrepreneurs may seek software development services, technical expertise, or mentorship from software companies to build and launch their products or platforms.
+
+                    <br /> <b>International Companies with Operations in India:</b> Software companies based outside India but with operations or clients in India may also consider Indian clients as part of their customer base. These could include multinational corporations, global enterprises, or foreign startups expanding into the Indian market.
+
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/u1.png" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">UK Clients</h2>
+                <p>
+                    <b> Businesses:</b> This category includes small, medium, and large enterprises across various industries such as finance, healthcare, retail, manufacturing, technology, and more. UK businesses may require software development services, customized solutions, IT consulting, software maintenance, and support.
+                    <br />
+                    <b> Government Agencies and Public Sector:</b> Government departments, local councils, public sector organizations, and government-funded institutions in the UK may need software solutions for administrative purposes, public services, data management, regulatory compliance, and citizen engagement.
+                    <br />
+                    <b> Financial Institutions:</b> Banks, insurance companies, investment firms, and other financial institutions in the UK often require specialized software for banking operations, financial analysis, risk management, compliance, trading platforms, and customer service.
+                    <br />
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/u2.jpg" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">USA Clients</h2>
+                <p>
+                    <br />
+                    <b>Retail and E-commerce: </b> UK-based retailers, e-commerce businesses, and online marketplaces require software for managing inventory, sales, customer relations, e-commerce platforms, payment processing, order fulfillment, and digital marketing.
+                    <br />
+                    <b>  Technology Companies: </b>UK-based technology firms, startups, software-as-a-service (SaaS) providers, and tech companies may collaborate with software companies for technology partnerships, software development outsourcing, product engineering, and innovation initiatives.
+                    <br />
+                    <b> Non-profit Organizations:</b> Charities, NGOs, non-profit organizations, and social enterprises in the UK may utilize software solutions for fundraising, donor management, volunteer coordination, program monitoring, and social impact measurement.
+                    <br />
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/u3.jpg" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">CANADA Clients</h2>
+                <p>
+                    <br />
+                    <b> Businesses: </b> Canadian Canadian businesses across different sectors such as finance, healthcare, retail, manufacturing, technology, and more may require software solutions for diverse purposes. This includes custom software development, enterprise resource planning (ERP) systems, customer relationship management (CRM) software, inventory management, and e-commerce platforms.
+                    <br />
+                    <b> Government Agencies and Public Sector:</b> Canadian federal, provincial, and municipal government entities, as well as public sector organizations, educational institutions, healthcare providers, and regulatory bodies, may need software solutions for digital transformation initiatives, government services, public infrastructure management, and data-driven decision-making.
+                </p><br />
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/u6.jpg" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">RUSSIAN Clients</h2>
+                <p>
+                    <br />
+                    <b> Financial Services:</b> Banks, credit unions, insurance companies, investment firms, and other financial institutions in Canada require specialized software for banking operations, wealth management, risk assessment, compliance with regulatory standards, electronic trading platforms, and mobile banking applications.
+                    <br />
+                    <b>Healthcare Providers: </b>Hospitals, clinics, medical practices, healthcare organizations, and provincial health authorities in Canada rely on software solutions for electronic health records (EHR), patient management systems, medical imaging, telemedicine, healthcare analytics, and interoperability among healthcare providers.
+                    <br />
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-2">
+
+
+                <img src="~/Images/japan.jpg" width="200px" height="200px" />
+            </div>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <div class="col-md-8">
+                <h2 style="color:red;">JAPAN Clients</h2>
+                <p>
+                    <br />
+                    <b>  Market Research:</b> Conduct thorough market research to understand the needs and preferences of Russian consumers. Tailor your software features and pricing to meet their specific requirements.
+                    <br />
+                    <b>
+                        Compliance and Security:
+                    </b> Russia has its own regulations and standards regarding software compliance and security. Make sure your software meets these requirements to instill trust in potential clients.
+                    <br />
+                    <b>Partner with Local Companies:</b> Partnering with local Russian companies or distributors can help you navigate the market more effectively and gain access to their existing customer base.
+                    <br />
+                </p>
+            </div>
+
+
+
+            <div class="col-md-1">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <br />
+    <br />
+
+
+
+
+
+
+
+    <footer id="footer">
+
+
+        <div class="row">
+
+            <div class="col-xl-3 col-md-4">
+                <h3>ABOUT US</h3>
+                <li> <a href="">Our Success Story</a> </li>
+                <br />
+                <li> <a href="">Policy</a>  </li>
+                <br />
+                <li> <a href="">Terms Of Use</a></li>
+                <br />
+
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>CONTACT US</h3>
+                <li> <a href="~/Home/ContactUs">Contact Us</a> </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Error</a>  </li>
+                <br />
+                <li> <a href="~/Home/ContactUs">Issues</a></li>
+                <br />
+
+            </div>
+
+
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Clients</h3>
+                <li> <a href="~/Home/Clients">United Kingdom</a> </li>
+                <br />
+                <li> <a href="~/Home/Clients">United States</a>  </li>
+                <br />
+                <li> <a href="~/Home/Clients">Canada</a></li>
+                <br />
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <h3>Dial Us</h3>
+                <li> <a href="">+91 9848022338</a> </li>
+                <br />
+                <li> <a href="">+91 9848022339</a>  </li>
+                <br />
+                <li> <a href="">+91 9848022337</a></li>
+                <br />
+            </div>
+        </div>
+
+        <ul class="social-icons">
+
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook text-primary"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram text-danger"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter text-info"></i></a></li>
+            <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope text-warning"></i></a></li>
+
+        </ul>
+        <p style="color:white;"> &copy; @DateTime.Now.Year - Developed By Mahesh&reg;</p>
+
+    </footer>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.getElementById('searchButton');
+            const searchResults = document.getElementById('searchResults'); 
+
+            function performSearch(event) {
+                event.preventDefault();
+
+                const searchTerm = searchInput.value.trim();
+
+                if (searchTerm !== '') {
+                    searchResults.innerHTML = '';
+
+                    const result = `You searched for: ${searchTerm}`;
+
+                    searchResults.textContent = result;
+                } else {
+                    alert('Please enter a search term');
+                }
+            }
+
+            searchButton.addEventListener('click', performSearch);
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

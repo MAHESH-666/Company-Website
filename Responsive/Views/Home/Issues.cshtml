@@ -1,0 +1,62 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Issues</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #bug {
+            font-size: 1rem;
+            margin: 0 auto;
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #1877F2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <br/>
+    <br/>
+    <div class="container" id="bug">
+        <label>E-mail</label>
+        <input type="email" class="form-control" placeholder="Enter Mail" />
+        <br />
+        <br />
+
+        <label>Query</label>
+        <textarea class="form-control" rows="3" placeholder="Queries"></textarea>
+
+        <br />
+        <br />
+        <button class="btn btn-light text-bg-dark" id="submitBtn">Submit</button>
+    </div>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#submitBtn").click(function(){
+                
+                var email = $("input[type='email']").val();
+                var query = $("textarea").val();
+                if(email.trim() === "" || query.trim() === ""){
+                    alert("Please fill in all fields.");
+                } else {
+                    alert("Thanks for Report, We Will Get back to you shortly");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
